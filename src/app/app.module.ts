@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { CoreModule }    from './core/core.module'
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { routing } from './app.routing';
     FormsModule,
     HttpModule,
     CoreModule,
+    NgbModule,
     routing,
     AdminModule
   ],
