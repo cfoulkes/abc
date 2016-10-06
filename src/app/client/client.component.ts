@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-client',
-  template: '<h2>Client</h2>',
+  selector: 'abc-client',
+  templateUrl: 'client.component.html'
+  //template: '<p>client</p>'
 })
 export class ClientComponent {
+
+  list: String[] = ['aaa', 'bbb'];
+
 }

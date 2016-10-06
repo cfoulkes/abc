@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  //moduleId: module.id,
-  selector: 'toh-nav',
+  selector: 'abc-nav',
   templateUrl: 'nav.component.html',
   styleUrls: ['nav.component.css'],
 })

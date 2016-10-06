@@ -1,20 +1,25 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+
+
 import { LoggerService } from './logger.service';
 import { NavComponent } from './nav/nav.component';
 import { throwIfAlreadyLoaded } from './module-import-guard';
-import { routing } from '../app.routing';
 import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [  
+  { path: 'home', component: HomeComponent }
+];
+
 
 @NgModule({
   imports: [
     CommonModule, // we use ngFor
-    routing
+    RouterModule.forChild(routes)
   ],
-//   exports: [NavComponent, SpinnerComponent],
-//   declarations: [NavComponent, SpinnerComponent],
-//   providers: [LoggerService, SpinnerService]
-  exports: [NavComponent, HomeComponent],
+//  exports: [NavComponent, HomeComponent],
+  exports: [NavComponent],
   declarations: [NavComponent, HomeComponent],
   providers: [LoggerService]
 })
